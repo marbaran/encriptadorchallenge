@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400&display=swap" rel="stylesheet">
+    <title>ENCRIPTADOR DE TEXTO</title>
+</head>
+<body>
+    <header>
+        <img class="logo" src="./imagenes/logo_alura.png" alt="logo Alura">
+    </header>
+    <main>
+        <section>
+            <textarea id="texto-encriptado" class="text-area" cols="30" rows="10" placeholder="Ingrese el texto aquí"></textarea>
+            <div>
+                <h6 class="informacion">Solo letras minúsculas y sin acentos</h6>
+            </div>
+            <div class="botones">
+                <button class="btn-encriptar" onclick="btnEncriptar()">ENCRIPTAR</button>
+                <button class="btn-desencriptar" onclick="btnDesencriptar()">DESENCRIPTAR</button>
+            </div>
+        </section>
+        <section>
+            <textarea id="campo-mensaje" class="mensaje" cols="30" rows="13"></textarea>
+            <div>
+                <button id="botonCopiar" class="btn-copiar" onclick="btnCopiar()">COPIAR</button>
+            </div>    
+        </section>
+    </main>
+    <footer>
+        <p>&copy; Copyright 2024 -- Marcelo Baranowski -- G6-ONE</p>
+    </footer>
+    <script src="./script.js"></script>   
+</body>
+</html>
